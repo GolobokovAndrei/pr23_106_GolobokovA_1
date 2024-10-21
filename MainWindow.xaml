@@ -1,0 +1,27 @@
+﻿<Window x:Class="pr23_106_GolobokovA_1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"    
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
+        Title="pr23_106_GolobokovA_1" Height="250" Width="425">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Margin="0,0,0,20">
+            Голобоков 1 Вариант
+        </TextBlock>
+
+        <TextBlock Grid.Row="1" VerticalAlignment="Center" Margin="0,0,0,10">Введите двенадцатизначное число:</TextBlock>
+        <TextBox x:Name="inputTextBox" Grid.Row="2" Width="200" HorizontalAlignment="Left" Margin="0,0,0,20"/>
+
+        <Button x:Name="calculateButton" Grid.Row="3" Content="Рассчитать" Width="100" HorizontalAlignment="Left" Click="calculateButton_Click" Margin="0,0,0,20"/>
+
+        <TextBlock Grid.Row="4" VerticalAlignment="Center" Margin="0,0,0,10">Результат:</TextBlock>
+        <TextBlock x:Name="resultTextBlock" Grid.Row="5" HorizontalAlignment="Left" TextWrapping="Wrap"/>
+    </Grid>
+</Window>
